@@ -1,0 +1,8 @@
+copy "%OGRE_HOME%\VCbuild\bin\Release\OgreMain.dll" "..\..\..\..\Release\"
+copy "%OGRE_HOME%\VCbuild\bin\Release\OIS.dll" "..\..\..\..\Release\"
+copy "%OGRE_HOME%\VCbuild\bin\Release\RenderSystem_GL.dll" "..\..\..\..\Release\"
+copy "%OGRE_HOME%\VCbuild\bin\Release\RenderSystem_Direct3D9.dll" "..\..\..\..\Release\"
+copy "%MYGUI_HOME%\VCbuild\bin\Release\MyGUIEngine.dll" "..\..\..\..\Release\"
+copy "%ICU_HOME%\bin\icudt44.dll" "..\..\..\..\Release\"
+copy "%ICU_HOME%\bin\icuuc44.dll" "..\..\..\..\Release\"
+copy "%LIBSNDFILE_HOME%\libsndfile-1.dll" "..\..\..\..\Release\"

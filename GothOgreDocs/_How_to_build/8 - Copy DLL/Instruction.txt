@@ -1,0 +1,1 @@
+Run copy_dll_debug.bat and copy_dll_release.bat.

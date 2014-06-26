@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Resource" version="1.1">
+	<Resource type="ResourceImageSet" name="MessageBoxIcons">
+		<Group name="Icons" texture="CommonUI_BlueWhiteSkins.png" size="50 50">
+			<Index name="Information">
+				<Frame point="0 206"/>
+			</Index>
+			<Index name="Question">
+				<Frame point="50 206"/>
+			</Index>
+			<Index name="Error">
+				<Frame point="100 206"/>
+			</Index>
+			<Index name="Warning">
+				<Frame point="150 206"/>
+			</Index>
+		</Group>
+	</Resource>	
+</MyGUI>

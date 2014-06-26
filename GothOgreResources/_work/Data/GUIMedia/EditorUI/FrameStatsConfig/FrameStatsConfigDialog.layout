@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Window" skin="WindowCSX" position="28 56 572 412" layer="Modal" name="_Main">
+        <Property key="Caption" value="#{FrameStatisticsConfiguration}"/>
+        <UserString key="DefaultCoord" value="0.2 0.13 0.6 0.8"/>
+        <Widget type="Widget" skin="PanelEmpty" position="0 0 562 40" align="HStretch Top" name="panelHContainer">
+            <Widget type="Widget" skin="PanelEmpty" position="0 0 281 40" name="panelHElement0">
+                <Widget type="Button" skin="CheckBox" position="8 8 265 24" name="checkVisible">
+                    <Property key="Caption" value="#{ShowFrameStatistics}"/>
+                </Widget>
+            </Widget>
+            <Widget type="Widget" skin="PanelEmpty" position="281 0 281 40" name="panelHElement1">
+                <Widget type="Button" skin="CheckBox" position="8 8 265 24" name="checkMovable">
+                    <Property key="Caption" value="#{MovableWindow}"/>
+                </Widget>
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" position="0 40 562 280" align="Stretch" name="panelVContainer">
+            <Widget type="Widget" skin="PanelEmpty" position="0 0 562 140" name="panelVElement0">
+                <Widget type="StaticText" skin="StaticText" position="8 8 546 24" align="HStretch Top">
+                    <Property key="Caption" value="#{TextTemplate_}"/>
+                    <Property key="TextAlign" value="Left Bottom"/>
+                </Widget>
+                <Widget type="Widget" skin="PanelSmall" position="8 32 546 100" align="Stretch">
+                    <Widget type="EditBox" skin="EditBoxEmpty" position="4 4 536 92" align="Stretch" name="editTextTemplate">
+                        <Property key="MultiLine" value="true"/>
+                        <Property key="VisibleVScroll" value="true"/>
+                        <Property key="WordWrap" value="false"/>
+                    </Widget>
+                </Widget>
+            </Widget>
+            <Widget type="Widget" skin="PanelEmpty" position="0 140 562 140" name="panelVElement1">
+                <Widget type="StaticText" skin="StaticText" position="8 8 546 24" align="HStretch Top">
+                    <Property key="Caption" value="#{InsertValue_}"/>
+                    <Property key="TextAlign" value="Left Bottom"/>
+                </Widget>
+                <Widget type="ListBox" skin="ListBox" position="8 32 546 100" align="Stretch" name="listKeys"/>
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" position="165 341 232 32" align="HCenter Bottom" name="panelButtons">
+            <Widget type="Button" skin="Button" position="0 0 100 32" name="buttonOK">
+                <Property key="Caption" value="#{OK}"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="132 0 100 32" name="buttonCancel">
+                <Property key="Caption" value="#{Cancel}"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

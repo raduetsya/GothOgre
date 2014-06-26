@@ -1,0 +1,6 @@
+A) Build boost.
+To do it, call bootstrap.bat, and then call bjam.exe.
+
+B) Set the environment variable BOOST_ROOT (My Computer Properties->Environment Variables)
+to <boost>, where <boost> is the root folder with boost.
+This environment variable is used by Ogre3D to find boost.

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Resource" version="1.1">
+	
+	<!-- Skin 'WindowCSX' (redefining).
+	The skin is for creating windows with four resizing corners. -->
+    <Resource type="ResourceLayout" name="WindowCSX">
+        <Widget type="Widget" skin="PanelEmpty" position="0 0 68 49" name="Root">
+            <Property key="Snap" value="true"/>
+            <Widget type="Widget" skin="CaptionWithButtonSkin" position="0 0 68 28" align="HStretch Top">
+                <Widget type="Button" skin="ButtonCloseSkin" position="44 6 18 17" align="Right Top" name="Button">
+                    <UserString key="Event" value="close"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="7 1 29 22" align="HStretch Top" name="Caption">
+                    <Property key="TextColour" value="0 0 0"/>
+                    <Property key="TextAlign" value="Center"/>
+                    <Property key="FontName" value="Default"/>
+                </Widget>
+            </Widget>
+            <Widget type="Widget" skin="WindowFrameSkin" position="0 28 68 20" align="Stretch">
+                <Widget type="Widget" skin="ClientTileSkin" position="4 2 58 12" align="Stretch" name="Client"/>
+            </Widget>
+			<Widget type="Button" skin="WindowResizeRightDownSkin" position="57 37 9 9" align="Right Bottom" name="ResizeRightBottom">
+				<Property key="Pointer" value="size_left"/>
+			</Widget>
+			<Widget type="Button" skin="WindowResizeLeftDownSkin" position="0 37 9 9" align="Left Bottom" name="ResizeLeftBottom">
+				<Property key="Pointer" value="size_right"/>
+			</Widget>
+			<Widget type="Button" skin="WindowResizeRightUpSkin" position="57 0 9 9" align="Right Top" name="ResizeRightTop">
+				<Property key="Pointer" value="size_right"/>
+			</Widget>
+			<Widget type="Button" skin="WindowResizeLeftUpSkin" position="0 0 9 9" align="Left Top" name="ResizeLeftTop">
+				<Property key="Pointer" value="size_left"/>
+			</Widget>
+        </Widget>
+    </Resource>
+	
+	<!-- Skin 'WindowHoleS'.
+	The skin describes a resizing window with an invisible client. -->
+    <Resource type="ResourceLayout" name="WindowWithHoleS">
+        <Widget type="Widget" skin="WindowFrameSkin" position="0 0 68 49" name="Root">
+            <Property key="Snap" value="true"/>
+			<Property key="NeedMouse" value="false"/>
+            <Property key="InheritsPick" value="true"/>
+            <Widget type="Widget" skin="PanelEmpty" position="3 3 62 43" align="Stretch" name="Client">
+				<Property key="NeedMouse" value="false"/>
+			</Widget>
+			<Widget type="Button" skin="WindowResizeRightDownSkin" position="57 37 9 9" align="Right Bottom" name="ResizeRightBottom">
+				<Property key="Pointer" value="size_left"/>
+			</Widget>
+			<Widget type="Button" skin="WindowResizeLeftDownSkin" position="0 37 9 9" align="Left Bottom" name="ResizeLeftBottom">
+				<Property key="Pointer" value="size_right"/>
+			</Widget>
+			<Widget type="Button" skin="WindowResizeRightUpSkin" position="57 0 9 9" align="Right Top" name="ResizeRightTop">
+				<Property key="Pointer" value="size_right"/>
+			</Widget>
+			<Widget type="Button" skin="WindowResizeLeftUpSkin" position="0 0 9 9" align="Left Top" name="ResizeLeftTop">
+				<Property key="Pointer" value="size_left"/>
+			</Widget>
+        </Widget>
+    </Resource>
+	
+	<!-- Skin 'SplitterH'. 
+	The skin is used to make a horizontal separator which can be moved with mouse.
+	In fact, this is the "SliderV" skin with transparent client. -->	
+    <Resource type="ResourceLayout" name="SplitterH">
+        <Widget type="Widget" skin="EmptyPanel" position="0 0 10 100" name="Root">
+			<Property key="TrackRangeMargins" value = "-3 -4" />
+			<Property key="MinTrackSize" value = "7" />
+			<Property key="MoveToClick" value = "false"/>
+            <Property key="VerticalAlignment" value="true"/>
+            <Widget type="Widget" skin="PanelEmpty" position="0 0 10 100" align="Stretch">
+                <Widget type="Button" skin="SliderTrackVSkin" position="0 0 10 7" align = "HStretch Top" name="Track"/>
+                <Widget type="Widget" skin="PanelEmpty" position="0 0 0 0" name="FirstPart"/>
+                <Widget type="Widget" skin="PanelEmpty" position="0 0 0 0" name="SecondPart"/>
+            </Widget>			
+        </Widget>
+    </Resource>
+	
+	<!-- Skin 'TreeControl'. 
+	The is a skin for the new widget type. -->
+	<Resource type="ResourceLayout" name="TreeControl">
+        <Widget type="Widget" skin="PanelEmpty" position="0 0 50 50" name="Root">
+			<UserString key="SkinLine" value="TreeControlItem"/>
+			<UserString key="HeightLine" value="18"/>
+			<UserString key="LevelOffset" value="14"/>
+			<Property key="NeedKey" value="true"/>
+			<Widget type="Widget" skin="PanelEmpty" position="3 3 26 44" align="Stretch" name="Client"/>
+			<Widget type="ScrollBar" skin="ScrollBarV" position="32 3 15 44" align="Right VStretch" name="VScroll"/>
+		</Widget>
+	</Resource>		
+
+	<Resource type="ResourceLayout" name="TreeControlItem">
+		<Widget type="Button" skin="TreeControlItemSkin" position="0 0 100 16" name="Root">
+			<Widget type="Widget" skin="PanelEmpty" position="0 0 100 16" align="HStretch VCenter" name="Contents">
+                <Property key="InheritsPick" value="true"/>
+				<Widget type="Button" skin="TreeControlItemButtonSkin" position="0 0 12 12" align="Left VCenter" name="ButtonExpandCollapse"/>
+				<Widget type="ImageBox" skin="ImageBox" position="0 0 0 0" align="Left VCenter" name="Image">
+					<Property key="InheritsPick" value="true"/>
+				</Widget>
+				<Widget type="TextBox" skin="TextBox" position="15 0 75 16" align="HStretch VCenter" name="Text">
+					<Property key="InheritsPick" value="true"/>
+					<Property key="FontName" value="Default"/>
+					<Property key="TextAlign" value="Default"/>
+				</Widget>
+			</Widget>
+		</Widget>
+	</Resource>
+
+	<!-- Skin 'TreeControl16'. This is the same as TreeControl,
+	except this skin provides a small 16x16 place for image near each tree item. -->
+	<Resource type="ResourceLayout" name="TreeControl16">
+        <Widget type="Widget" skin="PanelEmpty" position="0 0 50 50" name="Root">
+			<UserString key="SkinLine" value="TreeControlItem16"/>
+			<UserString key="HeightLine" value="18"/>
+			<UserString key="LevelOffset" value="14"/>
+			<Property key="NeedKey" value="true"/>
+			<Widget type="Widget" skin="PanelEmpty" position="3 3 26 44" align="Stretch" name="Client"/>
+			<Widget type="ScrollBar" skin="ScrollBarV" position="32 3 15 44" align="Right VStretch" name="VScroll"/>
+		</Widget>
+	</Resource>		
+
+	<Resource type="ResourceLayout" name="TreeControlItem16">
+		<Widget type="Button" skin="TreeControlItemSkin" position="0 0 100 16" name="Root">
+			<Widget type="Widget" skin="PanelEmpty" position="0 0 100 16" align="HStretch VCenter" name="Contents">
+                <Property key="InheritsPick" value="true"/>
+				<Widget type="Button" skin="TreeControlItemButtonSkin" position="0 0 12 12" align="Left VCenter" name="ButtonExpandCollapse"/>
+				<Widget type="ImageBox" skin="ImageBox" position="15 0 16 16" align="Left VCenter" name="Image">
+					<Property key="InheritsPick" value="true"/>
+				</Widget>
+				<Widget type="TextBox" skin="TextBox" position="34 0 66 16" align="HStretch VCenter" name="Text">
+					<Property key="InheritsPick" value="true"/>
+					<Property key="FontName" value="Default"/>
+					<Property key="TextAlign" value="Default"/>
+				</Widget>
+			</Widget>
+		</Widget>
+	</Resource>
+	
+	<!-- Skin 'FrameStatsTextBox' - skin for the text box in the frame statistics. -->
+    <Resource type="ResourceLayout" name="FrameStatsTextBox" version="3.2.0">
+        <Widget type="Widget" skin="FrameStatsTextBoxSkin" position="0 0 16 16" name="Root">
+            <Property key="TextAlign" value="Default"/>
+            <Property key="FontName" value="Default"/>
+        </Widget>
+    </Resource>
+	
+</MyGUI>

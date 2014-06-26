@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI>
+	<!-- Message box -->
+	<Tag name="OK">ОК</Tag>
+	<Tag name="Yes">Да</Tag>
+	<Tag name="No">Нет</Tag>
+	<Tag name="Abort">Прервать</Tag>
+	<Tag name="Retry">Повторить</Tag>
+	<Tag name="Ignore">Игнорировать</Tag>
+	<Tag name="Cancel">Отмена</Tag>
+	<Tag name="Try">Попытаться</Tag>
+	<Tag name="Continue">Продолжить</Tag>
+	<Tag name="Close">Закрыть</Tag>
+	<Tag name="Apply">Применить</Tag>
+
+	<Tag name="Information">Информация</Tag>
+	<Tag name="Question">Вопрос</Tag>
+	<Tag name="Warning">Предупреждение</Tag>
+	<Tag name="Error">Ошибка</Tag>
+	
+	<!-- FileDialog -->
+	<Tag name="FoldersAndFiles">Папки и файлы</Tag>
+	<Tag name="AlphabeticList">Алфавитный список</Tag>
+	<Tag name="FileName">Имя файла</Tag>
+	<Tag name="FileSize">Размер</Tag>
+	<Tag name="FilePath">Путь</Tag>
+	<Tag name="ArchiveType">Тип архива</Tag>
+	<Tag name="FileName_">Имя файла:</Tag>
+	<Tag name="FileType_">Тип файлов:</Tag>
+	<Tag name="CurrentPath_">Текущий путь:</Tag>
+	<Tag name="SelectFileBefore">Вначале выберите файл.</Tag>
+	<Tag name="FileNotFound">Файл не найден: '#{1}'</Tag>
+	<Tag name="ConfirmOverwriteFile">Файл '#{1}' уже существует. Хотите перезаписать его?</Tag>
+	<Tag name="Load">Загрузить</Tag>
+	<Tag name="Merge">Смешать</Tag>
+	<Tag name="Save">Сохранить</Tag>
+
+	<!-- Progress dialog -->
+	<Tag name="Scanning">Сканирую</Tag>
+	<Tag name="Loading">Загружаю</Tag>
+	<Tag name="Merging">Смешиваю</Tag>
+	<Tag name="Saving">Сохраняю</Tag>
+	<Tag name="StopTimer">Остановить таймер</Tag>
+
+</MyGUI>

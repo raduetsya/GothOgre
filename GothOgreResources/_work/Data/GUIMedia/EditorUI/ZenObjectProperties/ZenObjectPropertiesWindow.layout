@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout">
+    <Widget type="Window" skin="WindowCSX" position="15 36 280 210" align="Default" layer="Overlapped" name="_Main">
+        <UserString key="DefaultCoord" value="0.60 0.50 0.40 0.50"/>
+        <Property key="Window_Snap" value="true"/>
+        <Property key="Window_MinSize" value="0 0"/>
+        <Property key="Widget_Visible" value="true"/>
+        <Widget type="ScrollView" skin="ScrollViewEmpty" position="2 2 267 170" align="Stretch" name="scrollView">
+            <Property key="ScrollView_VisibleHScroll" value="false"/>
+        </Widget>
+    </Widget>
+    <Widget type="Widget" skin="PanelSmall" position="16 260 200 168" align="Default" layer="Back" name="_Group">
+        <Widget type="StaticText" skin="StaticText" position="4 3 188 20" align="HStretch Top" name="_Group_textCaption">
+            <Property key="Widget_Caption" value="Caption"/>
+            <Property key="Text_TextAlign" value="Center"/>
+        </Widget>
+        <Widget type="Button" skin="ButtonMinusPlus" position="175 5 18 18" align="Right Top" name="_Group_buttonMinimize"/>
+        <Widget type="Widget" skin="PanelEmpty" position="3 24 192 139" align="Stretch" name="_Group_clientArea"/>
+    </Widget>
+    <Widget type="Widget" skin="PanelEmpty" position="304 36 267 32" layer="Back" name="_Edit">
+        <Widget type="StaticText" skin="StaticText" position="7 4 100 24" align="Left VCenter" name="_Edit_textName">
+            <Property key="Text_TextAlign" value="Left VCenter"/>
+        </Widget>
+        <Widget type="Edit" skin="Edit" position="111 2 150 28" align="HStretch VCenter" name="_Edit_editValue"/>
+    </Widget>
+    <Widget type="Widget" skin="PanelEmpty" position="304 102 267 32" layer="Back" name="_Combo">
+        <Widget type="StaticText" skin="StaticText" position="8 4 100 24" align="Left VCenter" name="_Combo_textName">
+            <Property key="Text_TextAlign" value="Left VCenter"/>
+        </Widget>
+        <Widget type="ComboBox" skin="ComboBox" position="112 2 150 28" align="HStretch VCenter" name="_Combo_comboValue"/>
+    </Widget>
+    <Widget type="Widget" skin="PanelEmpty" position="304 134 267 32" layer="Back" name="_ThreeEdits">
+        <Widget type="StaticText" skin="StaticText" position="8 4 100 24" align="Left VCenter" name="_ThreeEdits_textName">
+            <Property key="Text_TextAlign" value="Left VCenter"/>
+        </Widget>
+        <Widget type="StaticText" skin="StaticText" position="112 4 18 23" align="Left VCenter" name="_ThreeEdits_text1">
+            <Property key="Widget_Caption" value="1"/>
+            <Property key="Text_TextAlign" value="Right VCenter"/>
+        </Widget>
+        <Widget type="Edit" skin="Edit" position="132 2 30 28" align="Left VCenter" name="_ThreeEdits_edit1"/>
+        <Widget type="StaticText" skin="StaticText" position="163 4 18 24" name="_ThreeEdits_text2">
+            <Property key="Text_TextAlign" value="Right VCenter"/>
+            <Property key="Widget_Caption" value="2"/>
+        </Widget>
+        <Widget type="Edit" skin="Edit" position="182 2 30 28" name="_ThreeEdits_edit2"/>
+        <Widget type="StaticText" skin="StaticText" position="213 4 18 24" name="_ThreeEdits_text3">
+            <Property key="Text_TextAlign" value="Right VCenter"/>
+            <Property key="Widget_Caption" value="3"/>
+        </Widget>
+        <Widget type="Edit" skin="Edit" position="232 2 30 28" name="_ThreeEdits_edit3"/>
+    </Widget>
+    <Widget type="Widget" skin="PanelEmpty" position="304 69 267 32" layer="Back" name="_EditButton">
+        <Widget type="StaticText" skin="StaticText" position="7 4 100 24" align="Left VCenter" name="_EditButton_textName">
+            <Property key="Text_TextAlign" value="Left VCenter"/>
+        </Widget>
+        <Widget type="Edit" skin="Edit" position="112 2 114 28" align="HStretch VCenter" name="_EditButton_editValue">
+            <Widget type="Button" skin="Button" position="-228 512 1 3"/>
+        </Widget>
+        <Widget type="Button" skin="ButtonSmall" position="225 2 37 28" align="Right VCenter" name="_EditButton_button">
+            <Property key="Widget_Caption" value="..."/>
+        </Widget>
+    </Widget>
+</MyGUI>

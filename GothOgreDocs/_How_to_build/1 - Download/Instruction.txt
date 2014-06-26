@@ -1,0 +1,32 @@
+A) Download Ogre source (revision 2838).
+Link to Ogre repository:
+http://bitbucket.org/sinbad/ogre
+You can use TortoiseHg to download (Clone) this.
+
+B) Download Ogre dependencies (revision 15). 
+Link to the repository:
+https://bitbucket.org/cabalistic/ogredeps
+You can use TortoiseHg to download (Clone) this.
+
+C) Download MyGUI from SVN (revision 4296):
+https://my-gui.svn.sourceforge.net/svnroot/my-gui/trunk
+You can use TortoiseSVN to download (Checkout) this.
+
+D) Download and install:
+Microsoft Visual Studio 2008
+DirectX 9 SDK
+CMake
+Doxygen
+Graphviz
+Html Help workshop
+
+DirectX 9 SDK and CMake are used to build Ogre3D.
+Doxygen, Graphviz, and Html Help workshop are used to build documentation for Ogre3D and MyGUI.
+
+E) Download boost. Boost is a big set of libraries which contains library "thread", 
+which is currently used to allow writing multi-threading cross-platform code.
+
+F) Download and install OpenAL SDK from openal.org.
+Run oalinst from the OpenAL redist folder
+Download and install libsndfile.
+The installer can be found at www.mega-nerd.com/libsndfile/

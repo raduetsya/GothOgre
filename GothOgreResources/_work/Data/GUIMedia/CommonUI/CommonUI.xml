@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="List">
+
+	<List file="MyGUI_Core.xml"/>
+	<List file="CommonUI_Language.xml"/>
+	<List file="CommonUI_Tags.xml"/>
+	<List file="CommonUI_BlueWhiteTheme.xml"/>
+	
+</MyGUI>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Window" skin="WindowCSX" position="35 20 632 660" layer="Modal" name="_Main">
+        <UserString key="DefaultCoord" value="0.10 0.04 0.80 0.92"/>
+        <Property key="Caption" value="#{GraphicSettings}"/>
+        <Widget type="Tab" skin="Tab" position="0 0 624 568" align="Stretch">
+            <Widget type="TabItem" skin="" position="4 26 615 536">
+                <Property key="Caption" value="#{RenderingDistances}"/>
+                <Widget type="ScrollView" skin="ScrollViewEmpty" position="0 0 614 537" align="Stretch" name="scrollViewRenderingDistances">
+                    <Property key="CanvasSize" value="620 535"/>
+                    <Property key="VisibleVScroll" value="true"/>
+                    <Property key="CanvasAlign" value="Left Top"/>
+                    <Property key="VisibleHScroll" value="false"/>
+                    <Widget type="Widget" skin="PanelSmall" position="0 267 612 265" align="HStretch Top" name="panelVobs">
+                        <Widget type="StaticText" skin="StaticText" position="160 36 156 24">
+                            <Property key="Caption" value="#{VobMaxSize}"/>
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="324 36 276 24" align="HStretch Top">
+                            <Property key="Caption" value="#{VobRenderingDistance}"/>
+                            <Property key="TextAlign" value="Center"/>
+                        </Widget>
+                        <Widget type="Edit" skin="Edit" position="160 100 156 24" name="editSmallVobSize">
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="Edit" skin="Edit" position="160 68 156 24" name="editTinyVobSize">
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="8 36 144 24">
+                            <Property key="Caption" value="#{VobType}"/>
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="9 68 143 24">
+                            <Property key="Caption" value="#{Tiny}"/>
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="8 100 144 24">
+                            <Property key="Caption" value="#{Small}"/>
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="8 132 144 24">
+                            <Property key="Caption" value="#{Normal}"/>
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="8 164 144 24">
+                            <Property key="Caption" value="#{Large}"/>
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="8 196 144 24">
+                            <Property key="Caption" value="#{ExtraLarge}"/>
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="8 228 144 24">
+                            <Property key="Caption" value="#{Huge}"/>
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="Edit" skin="Edit" position="160 132 156 24" name="editNormalVobSize">
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="Edit" skin="Edit" position="160 164 156 24" name="editLargeVobSize">
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="Edit" skin="Edit" position="160 196 156 24" name="editExtraLargeVobSize">
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="Edit" skin="Edit" position="160 228 156 24" name="editHugeVobSize">
+                            <Property key="TextAlign" value="Right VCenter"/>
+                            <Property key="ReadOnly" value="true"/>
+                        </Widget>
+                        <Widget type="Widget" skin="PanelEmpty" position="324 64 276 192" align="HStretch Top">
+                            <Widget type="HScroll" skin="HSlider" position="0 4 276 24" align="HStretch Top" name="sliderTinyVobDistance"/>
+                            <Widget type="HScroll" skin="HSlider" position="0 36 276 24" align="HStretch Top" name="sliderSmallVobDistance"/>
+                            <Widget type="HScroll" skin="HSlider" position="0 68 276 24" align="HStretch Top" name="sliderNormalVobDistance"/>
+                            <Widget type="HScroll" skin="HSlider" position="0 100 276 24" align="HStretch Top" name="sliderLargeVobDistance"/>
+                            <Widget type="HScroll" skin="HSlider" position="0 132 276 24" align="HStretch Top" name="sliderExtraLargeVobDistance"/>
+                            <Widget type="HScroll" skin="HSlider" position="0 164 276 24" align="HStretch Top" name="sliderHugeVobDistance"/>
+                            <Widget type="StaticText" skin="StaticText" position="68 68 140 24" align="HCenter Top" name="textNormalVobDistance">
+                                <Property key="TextAlign" value="Center"/>
+                                <Property key="NeedKey" value="false"/>
+                                <Property key="NeedMouse" value="false"/>
+                            </Widget>
+                            <Widget type="StaticText" skin="StaticText" position="68 36 140 24" align="HCenter Top" name="textSmallVobDistance">
+                                <Property key="TextAlign" value="Center"/>
+                                <Property key="NeedKey" value="false"/>
+                                <Property key="NeedMouse" value="false"/>
+                            </Widget>
+                            <Widget type="StaticText" skin="StaticText" position="68 4 140 24" align="HCenter Top" name="textTinyVobDistance">
+                                <Property key="TextAlign" value="Center"/>
+                                <Property key="NeedKey" value="false"/>
+                                <Property key="NeedMouse" value="false"/>
+                            </Widget>
+                            <Widget type="StaticText" skin="StaticText" position="68 100 140 24" align="HCenter Top" name="textLargeVobDistance">
+                                <Property key="TextAlign" value="Center"/>
+                                <Property key="NeedKey" value="false"/>
+                                <Property key="NeedMouse" value="false"/>
+                            </Widget>
+                            <Widget type="StaticText" skin="StaticText" position="68 132 140 24" align="HCenter Top" name="textExtraLargeVobDistance">
+                                <Property key="TextAlign" value="Center"/>
+                                <Property key="NeedKey" value="false"/>
+                                <Property key="NeedMouse" value="false"/>
+                            </Widget>
+                            <Widget type="StaticText" skin="StaticText" position="68 164 140 24" align="HCenter Top" name="textHugeVobDistance">
+                                <Property key="TextAlign" value="Center"/>
+                                <Property key="NeedKey" value="false"/>
+                                <Property key="NeedMouse" value="false"/>
+                            </Widget>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="190 3 232 20" align="HCenter Top">
+                            <Property key="Caption" value="#{Vobs}"/>
+                            <Property key="TextAlign" value="Center"/>
+                        </Widget>
+                    </Widget>
+                    <Widget type="Widget" skin="PanelSmall" position="0 4 612 112" align="HStretch Top">
+                        <Widget type="StaticText" skin="StaticText" position="198 4 216 20" align="HCenter Top">
+                            <Property key="Caption" value="#{Camera}"/>
+                            <Property key="TextAlign" value="Center"/>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="12 35 304 25">
+                            <Property key="Caption" value="#{FarClipDistance}"/>
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="Widget" skin="PanelEmpty" position="324 32 272 32" align="HStretch Top">
+                            <Widget type="HScroll" skin="HSlider" position="0 4 272 24" align="HStretch Top" name="sliderFarClipDistance"/>
+                            <Widget type="StaticText" skin="StaticText" position="66 4 140 24" align="HCenter Top" name="textFarClipDistance">
+                                <Property key="TextAlign" value="Center"/>
+                                <Property key="NeedMouse" value="false"/>
+                                <Property key="NeedKey" value="false"/>
+                            </Widget>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="12 71 304 24">
+                            <Property key="Caption" value="#{AutoUpdateOtherDistances}"/>
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="Button" skin="CheckBox" position="324 67 24 32" name="checkAutoUpdateOtherDistances"/>
+                    </Widget>
+                    <Widget type="Widget" skin="PanelSmall" position="0 123 612 137" align="HStretch Top">
+                        <Widget type="StaticText" skin="StaticText" position="160 4 292 20" align="HCenter Top">
+                            <Property key="Caption" value="#{Fog}"/>
+                            <Property key="TextAlign" value="Center"/>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="12 64 304 24">
+                            <Property key="Caption" value="#{FogNearDistance}"/>
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="12 96 304 24">
+                            <Property key="Caption" value="#{FogFarDistance}"/>
+                            <Property key="TextAlign" value="Right VCenter"/>
+                        </Widget>
+                        <Widget type="Widget" skin="PanelEmpty" position="324 60 272 64" align="HStretch Top">
+                            <Widget type="HScroll" skin="HSlider" position="0 4 276 24" align="HStretch Top" name="sliderFogNearDistance"/>
+                            <Widget type="HScroll" skin="HSlider" position="0 36 276 24" align="HStretch Top" name="sliderFogFarDistance"/>
+                            <Widget type="StaticText" skin="StaticText" position="66 4 140 24" align="HCenter Top" name="textFogNearDistance">
+                                <Property key="TextAlign" value="Center"/>
+                                <Property key="NeedKey" value="false"/>
+                                <Property key="NeedMouse" value="false"/>
+                            </Widget>
+                            <Widget type="StaticText" skin="StaticText" position="66 36 140 24" align="HCenter Top" name="textFogFarDistance">
+                                <Property key="TextAlign" value="Center"/>
+                                <Property key="NeedMouse" value="false"/>
+                                <Property key="NeedKey" value="false"/>
+                            </Widget>
+                        </Widget>
+                        <Widget type="StaticText" skin="StaticText" position="12 32 304 24">
+                            <Property key="TextAlign" value="Right VCenter"/>
+                            <Property key="Caption" value="#{FogEnabled}"/>
+                        </Widget>
+                        <Widget type="Button" skin="CheckBox" position="325 28 24 32" name="checkFogEnabled"/>
+                    </Widget>
+                </Widget>
+            </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" position="197 584 228 32" align="HCenter Bottom" name="panelButtons">
+            <Widget type="Button" skin="Button" position="0 0 104 32" name="buttonOK">
+                <Property key="Caption" value="#{OK}"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="128 0 100 32" name="buttonCancel">
+                <Property key="Caption" value="#{Cancel}"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

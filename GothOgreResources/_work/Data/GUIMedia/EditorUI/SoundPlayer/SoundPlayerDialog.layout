@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Window" skin="WindowCSX" position="205 10 480 195" layer="Modal" name="_Main">
+        <Property key="Caption" value="#{SoundPlayer}"/>
+        <Property key="Visible" value="true"/>
+        <UserString key="DefaultCoord" value="0.427 0.043 0.573 0.33"/>
+        <Widget type="Button" skin="Button" position="10 115 70 35" align="Left Bottom" name="buttonPlay">
+            <Property key="Caption" value="#{Play}"/>
+        </Widget>
+        <Widget type="Button" skin="Button" position="90 115 71 35" align="Left Bottom" name="buttonStop">
+            <Property key="Caption" value="#{Stop}"/>
+        </Widget>
+        <Widget type="Button" skin="Button" position="375 115 85 35" align="Right Bottom" name="checkLooping">
+            <Property key="Caption" value="#{Looping}"/>
+            <Property key="TextAlign" value="Right VCenter"/>
+        </Widget>
+        <Widget type="ScrollBar" skin="SliderH" position="10 90 450 15" align="HStretch Top" name="sliderPosition">
+            <Property key="Range" value="2"/>
+            <Property key="RangePosition" value="0"/>
+        </Widget>
+        <Widget type="ScrollBar" skin="SliderH" position="275 135 85 15" align="Right Bottom" name="sliderVolume">
+            <Property key="Range" value="100"/>
+            <Property key="RangePosition" value="99"/>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position="275 115 85 20" align="Right Bottom">
+            <Property key="Caption" value="#{Volume_}"/>
+        </Widget>
+        <Widget type="EditBox" skin="EditBox" position="10 10 95 65" name="editPosition">
+            <Property key="FontHeight" value="40"/>
+            <Property key="ReadOnly" value="true"/>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position="115 10 115 25">
+            <Property key="Caption" value="#{FileName_}"/>
+            <Property key="TextAlign" value="Right VCenter"/>
+        </Widget>
+        <Widget type="EditBox" skin="EditBox" position="235 10 225 30" align="HStretch Top" name="editFileName">
+            <Property key="ReadOnly" value="true"/>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position="115 50 115 25">
+            <Property key="Caption" value="#{Length_}"/>
+            <Property key="TextAlign" value="Right VCenter"/>
+        </Widget>
+        <Widget type="EditBox" skin="EditBox" position="235 49 100 30" name="editLength">
+            <Property key="ReadOnly" value="true"/>
+        </Widget>
+    </Widget>
+</MyGUI>

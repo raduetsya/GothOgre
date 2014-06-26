@@ -1,0 +1,22 @@
+A) Apply patches from this folder before.
+To apply patch, use right-click on Ogre folder -> TortoiseHg 
+-> Workbench -> Repository -> Import.
+
+B) Run CMake (cmake-gui), set the parameters:
+Where is the source code:    <Ogre>
+Where to build the binaries: <Ogre>/VCbuild
+
+Press the "Configure" button, then press the "Configure" button again, 
+and press the "Generate" button.
+The "Generate" button will create a solution <Ogre>/VCbuild/Ogre.sln.
+
+C) Open solution <ogre>\VCbuild\ogre.sln, and build it.
+
+D) Build the documentation (Ogre API Reference )
+The "doc" project in the same solution can make documentation for Ogre3D in html formal.
+To compile chm, open "<ogre>/VCbuild/api/html/index.hhp" with HTML Help WorkShop.
+You'll get "<ogre>/VCbuild/api/html/OgreAPIReference.chm" as result.
+
+E) Ensure you successfully have built Ogre3D. 
+Go to folder "<ogre>/VCbuild/bin/Release" and run "SampleBrowser.exe". 
+Go to folder "<ogre>/VCbuild/bin/Debug" and run "SampleBrowser_d.exe".

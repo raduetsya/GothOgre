@@ -1,0 +1,6 @@
+#ifndef MACHINE_ENDIAN_H
+#define MACHINE_ENDIAN_H
+
+#define MACHINE_LITTLE_ENDIAN 1 // 0
+
+#endif // MACHINE_ENDIAN_H

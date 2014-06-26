@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI>
+	<Tag name="File">Файл</Tag>
+	<Tag name="LoadWorld">Загрузить мир...</Tag>
+	<Tag name="Quit">Выход</Tag>
+
+	<Tag name="View">Вид</Tag>
+	<Tag name="FreeLook">Обзор мышью (F3)</Tag>
+	<Tag name="FrameStats">Статистика рендеринга</Tag>
+	<Tag name="RenderMode_Solid">Режим рендеринга (R): Solid</Tag>
+	<Tag name="RenderMode_Wireframe">Режим рендеринга (R): Wireframe</Tag>
+	
+	<Tag name="LoadWorld_Desc">Загрузка мира из zen-файла</Tag>
+	<Tag name="Quit_Desc">Выход из приложения</Tag>
+	<Tag name="FrameStats_Desc">Показать/скрыть статистику рендеринга (FPS, число треугольников и т.п.)</Tag>
+	<Tag name="FreeLook_Desc">Использовать мышь для свободного обзора</Tag>
+	<Tag name="Select_Desc">Передвижение камеры и выбор объектов</Tag>
+	<Tag name="RenderMode_Desc">Режим рендеринга (Solid/Wireframe)</Tag>
+
+	<Tag name="EditorMenuBar_CheckedTemplate">#{1}: вкл</Tag>
+	<Tag name="EditorMenuBar_UncheckedTemplate">#{1}: выкл</Tag>
+	
+	<Tag name="SelectWorldToLoad">Выберите мир для загрузки</Tag>
+	<Tag name="FromResourceSystem">Из ресурсов</Tag>
+	<Tag name="FromFileSystem">Из файловой системы</Tag>
+	<Tag name="Rescan">Обновить</Tag>
+	<Tag name="Load">Загрузить</Tag>
+	<Tag name="Save">Сохранить</Tag>
+	
+	<Tag name="Error">Ошибка</Tag>
+	<Tag name="SelectFileBefore">Вначале выберите файл.</Tag>
+	<Tag name="CouldNotOpenFile">Не могу открыть файл: '#{1}'</Tag>	
+	
+</MyGUI>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout">
+    <Widget type="Window" skin="WindowCSX" position="152 43 447 437" layer="Modal" name="_Main">
+        <UserString key="DefaultCoord" value="0.25 0.20 0.50 0.60"/>
+        <Property key="Widget_Caption" value="About GothOgre"/>
+        <Widget type="StaticText" skin="StaticText" position="64 15 308 46" align="HCenter Top">
+            <Property key="Widget_Caption" value="GothOgre"/>
+            <Property key="Text_TextAlign" value="Center"/>
+            <Property key="Text_FontHeight" value="50"/>
+        </Widget>
+        <Widget type="StaticText" skin="StaticText" position="121 61 195 21" align="HCenter Top">
+            <Property key="Widget_Caption" value="version 0.1"/>
+            <Property key="Text_FontHeight" value="20"/>
+            <Property key="Text_TextAlign" value="Center"/>
+        </Widget>
+        <Widget type="StaticText" skin="StaticText" position="152 180 133 18" align="HCenter Top">
+            <Property key="Widget_Caption" value="Developed by:"/>
+            <Property key="Text_TextAlign" value="Center"/>
+            <Property key="Text_FontHeight" value="17"/>
+        </Widget>
+        <Widget type="StaticText" skin="StaticText" position="107 198 222 18" align="HCenter Top">
+            <Property key="Text_TextAlign" value="Center"/>
+            <Property key="Widget_Caption" value="Vitaly Baranov (&quot;Kerrax&quot;)"/>
+            <Property key="Text_FontHeight" value="14"/>
+        </Widget>
+        <Widget type="StaticText" skin="StaticText" position="148 243 140 22" align="HCenter Top">
+            <Property key="Text_FontHeight" value="17"/>
+            <Property key="Widget_Caption" value="Home page:"/>
+            <Property key="Text_TextAlign" value="Center"/>
+        </Widget>
+        <Widget type="StaticText" skin="StaticText" position="72 265 293 15" align="HCenter Top">
+            <Property key="Text_TextAlign" value="Center"/>
+            <Property key="Text_FontHeight" value="14"/>
+            <Property key="Widget_Caption" value="www.gothogre.sourceforge.net"/>
+        </Widget>
+        <Widget type="StaticText" skin="StaticText" position="128 321 180 21" align="HCenter Top">
+            <Property key="Widget_Caption" value="Used free libraries:"/>
+            <Property key="Text_FontHeight" value="17"/>
+            <Property key="Text_TextAlign" value="Center"/>
+        </Widget>
+        <Widget type="StaticText" skin="StaticText" position="22 344 392 38" align="HCenter Top">
+            <Property key="Widget_Caption" value="Ogre3D (www.ogre3d.org)\nMyGUI (http://www.ogre3d.org/wiki/index.php/MyGUI)"/>
+            <Property key="Text_TextAlign" value="Center"/>
+        </Widget>
+        <Widget type="Edit" skin="WordWrapSimple" position="53 104 331 56" align="HCenter Top">
+            <Property key="Widget_Caption" value="This program is designed to be used for editing Gothic worlds. This version is only demo; it can be used only for loading worlds and fly through them."/>
+        </Widget>
+    </Widget>
+</MyGUI>

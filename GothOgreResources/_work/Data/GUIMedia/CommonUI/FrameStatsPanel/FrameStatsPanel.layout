@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Window" skin="WindowCSX" position="16 36 208 104" layer="Modal" name="_Window">
+        <UserString key="DefaultCoord" value="0.02 0.83 0.34 0.15"/>
+        <UserString key="StoreClientCoordToConfig" value="true"/>
+        <Property key="Caption" value="#{FrameStatistics}"/>
+		<Widget type="Widget" skin="PanelEmpty" position="0 0 198 67" align="Stretch" layer="Statistic" name="_Panel">
+			<UserString key="DefaultCoord" value="0.02 0.83 0.34 0.15"/>
+			<Property key="NeedKey" value="false"/>
+			<Property key="NeedMouse" value="false"/>
+			<Widget type="TextBox" skin="FrameStatsTextBox" position="0 0 198 67" align="Stretch" name="staticText"/>
+		</Widget>
+    </Widget>
+</MyGUI>

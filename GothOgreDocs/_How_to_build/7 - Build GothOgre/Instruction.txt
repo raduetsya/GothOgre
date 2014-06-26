@@ -1,0 +1,2 @@
+Build GothOgre.sln
+Project "UnicodeSupport_ICU" is not necessary to build under Windows.

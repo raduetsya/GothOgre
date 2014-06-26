@@ -1,0 +1,62 @@
+Index: MyGUIEngine/include/MyGUI_Platform.h
+===================================================================
+--- MyGUIEngine/include/MyGUI_Platform.h	(revision 4296)
++++ MyGUIEngine/include/MyGUI_Platform.h	(working copy)
+@@ -107,6 +107,9 @@
+ #	endif
+ #endif
+ 
++#if OGRE_COMPILER == OGRE_COMPILER_MSVC && !defined(_DEBUG)
++#   define _SECURE_SCL 0
++#endif
+ 
+ // Linux/Apple Settings
+ #if MYGUI_PLATFORM == MYGUI_PLATFORM_LINUX || MYGUI_PLATFORM == MYGUI_PLATFORM_APPLE
+Index: Platforms/Ogre/OgrePlatform/src/MyGUI_OgreDataManager.cpp
+===================================================================
+--- Platforms/Ogre/OgrePlatform/src/MyGUI_OgreDataManager.cpp	(revision 4296)
++++ Platforms/Ogre/OgrePlatform/src/MyGUI_OgreDataManager.cpp	(working copy)
+@@ -64,8 +64,7 @@
+ 
+ 	bool OgreDataManager::isDataExist(const std::string& _name)
+ 	{
+-		const VectorString& files = getDataListNames(_name);
+-		return (files.size() == 1);
++		return Ogre::ResourceGroupManager::getSingleton().resourceExists(mGroup, _name);
+ 	}
+ 
+ 	const VectorString& OgreDataManager::getDataListNames(const std::string& _pattern)
+Index: Platforms/Ogre/OgrePlatform/src/MyGUI_OgreRTTexture.cpp
+===================================================================
+--- Platforms/Ogre/OgrePlatform/src/MyGUI_OgreRTTexture.cpp	(revision 4296)
++++ Platforms/Ogre/OgrePlatform/src/MyGUI_OgreRTTexture.cpp	(working copy)
+@@ -4,9 +4,9 @@
+ 	@date		10/2009
+ */
+ 
+-#include <cstring>
+ #include "MyGUI_OgreRTTexture.h"
+ #include "MyGUI_OgreRenderManager.h"
++#include <cstring>
+ 
+ namespace MyGUI
+ {
+Index: Platforms/Ogre/OgrePlatform/src/MyGUI_OgreTexture.cpp
+===================================================================
+--- Platforms/Ogre/OgrePlatform/src/MyGUI_OgreTexture.cpp	(revision 4296)
++++ Platforms/Ogre/OgrePlatform/src/MyGUI_OgreTexture.cpp	(working copy)
+@@ -4,13 +4,13 @@
+ 	@date		04/2009
+ */
+ 
+-#include <cstring>
+ #include "MyGUI_OgreTexture.h"
+ #include "MyGUI_DataManager.h"
+ #include "MyGUI_OgreRenderManager.h"
+ #include "MyGUI_OgreDiagnostic.h"
+ #include "MyGUI_OgreRTTexture.h"
+ #include <Ogre.h>
++#include <cstring>
+ 
+ #include "MyGUI_LastHeader.h"
+ 

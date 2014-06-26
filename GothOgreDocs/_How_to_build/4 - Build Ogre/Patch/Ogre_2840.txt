@@ -1,0 +1,3 @@
+The old "Any::holder<ValueType>" class template was splitted into two classes: "Any::baseholder" and new Any::holder<ValueType>
+to allow me to create AnyLite - an Any modification which doesn't require that ValueType has operator <<.
+Also any_cast and Any::operator() were modifier (type holder was changed to type baseholder in these functions.)

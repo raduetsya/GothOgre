@@ -1,0 +1,5 @@
+// Insert the following lines into OISPrereqs.h before including common STL containers:
+
+#if defined(_MSC_VER) && !defined(_DEBUG)
+#   define _SECURE_SCL 0
+#endif

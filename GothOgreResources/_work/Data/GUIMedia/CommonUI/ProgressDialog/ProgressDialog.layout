@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Window" skin="WindowCSX" position="84 135 495 320" layer="Modal" name="_Main">
+        <Property key="Caption" value=""/>
+        <UserString key="DefaultCoord" value="0.2 0.2 0.6 0.6"/>
+        <Widget type="ProgressBar" skin="ProgressBar" position="15 50 460 15" align="HStretch Top" name="progressBar"/>
+        <Widget type="EditBox" skin="EditBox" position="15 12 460 28" align="HStretch Top" name="textMessage">
+            <Property key="ReadOnly" value="true"/>
+        </Widget>
+        <Widget type="ListBox" skin="ListBox" position="15 75 460 155" align="Stretch" name="listLog">
+            <UserString key="ColorInfo" value="#008000"/>
+            <UserString key="ColorWarning" value="#808000"/>
+            <UserString key="ColorError" value="#800000"/>
+            <UserString key="TotalFormat" value="#800000Errors: #{3}, #808000Warnings: #{2}, #008000Infos: #{1}"/>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" position="107 240 270 35" align="HCenter Bottom">
+            <Widget type="Button" skin="Button" position="0 0 120 35" name="buttonClose">
+                <Property key="Caption" value="#{Close}"/>
+                <UserString key="CaptionDefault" value="#{Close}"/>
+                <UserString key="CaptionWithTimeout" value="#{Close} (#{1})"/>
+                <UserString key="DefaultInfoTimeout" value="0"/>
+                <UserString key="DefaultWarningTimeout" value="5"/>
+                <UserString key="DefaultErrorTimeout" value="30"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="150 0 120 35" name="buttonStopTimer">
+                <Property key="Caption" value="#{StopTimer}"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

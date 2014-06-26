@@ -1,0 +1,2 @@
+Set correct pathes in dirs-1.reg, run it and reboot your system (to apply changes in the registry).
+Setting ICU_HOME is not required for Windows.

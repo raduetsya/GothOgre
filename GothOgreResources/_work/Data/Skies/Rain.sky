@@ -1,0 +1,52 @@
+Sky( "Rain" )
+{
+	CloudLayer( "RainClouds1" )
+	{
+		layer( 12 )
+		mesh( "Skydome_Layer1.3ds" )
+		
+		material( SkyRainClouds )
+		{
+			texture( "SkyRainClouds.tga")
+			texAniMapDir( 0.001 0.001 )
+		}
+		
+		ambientLight(MUL:"200 200 200")
+		diffuseLight(MUL:"30 30 30")
+		specularLight(MUL:"30 30 30")
+	}
+	
+	// Звуковой эффект. Имя звукового эффекта - это имя звукового файла,
+	// или имя инстанции в файле sfx.dat.
+	// LOOP:0 или LOOP:1 - надо ли зацикливать звуковой эффект.
+	Sound( "Rain_01" )
+	{
+		layer( 1 )
+	
+		// Информация о звуковом файле и надо ли зацикливать звук;
+		// надо указать либо soundFile, либо soundInstance.
+		soundFile("Rain_01.wav" LOOP: 1)
+		
+		// Позиция источника звука относительно камеры.
+		position(0 0 100)
+		
+		// Громкость, в процентах
+		volume(100)
+		
+		// Параметры звукового эффекта, в зависимости от времени, прошедшего после старта
+		// этого погодного явления
+		//Time("0:00")
+		//{
+		//	relativePosition(0 0 100)
+		//	volume(100)
+		//}
+	}
+	
+	/*
+	Weather ("Thunder")
+	{
+		startChance(0.05)
+		duration( "0:00:10" "0:00:30" )
+		skyRef ("Rain_Thunder.sky") // soundInstance( "MFX_Thunderstorm_Thunder" LOOP:0)
+	}*/
+}

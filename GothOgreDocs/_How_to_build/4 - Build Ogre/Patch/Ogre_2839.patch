@@ -1,0 +1,180 @@
+# HG changeset patch
+# User Kerrax
+# Date 1306183544 -21600
+# Node ID 2dfa7360a14ca8accf3bd5b3aaa23af0537a7dfe
+# Parent  93180cc7c44f04d01a0d5419f9e32adc0991f687
+UserObjectBindings added to SubMesh, DataStream;
+SECURE_SCL defined to speed up release version
+
+diff -r 93180cc7c44f -r 2dfa7360a14c OgreMain/include/OgreDataStream.h
+--- a/OgreMain/include/OgreDataStream.h	Thu May 19 21:57:22 2011 -0500
++++ b/OgreMain/include/OgreDataStream.h	Tue May 24 02:45:44 2011 +0600
+@@ -31,6 +31,7 @@
+ #include "OgrePrerequisites.h"
+ #include "OgreString.h"
+ #include "OgreSharedPtr.h"
++#include "OgreUserObjectBindings.h"
+ #include <istream>
+ 
+ namespace Ogre {
+@@ -298,7 +299,22 @@
+         /** Close the stream; this makes further operations invalid. */
+         virtual void close(void) = 0;
+ 		
++	public:
++		/** Return an instance of user objects binding associated with this class.
++		You can use it to associate one or more custom objects with this class instance.
++		@see UserObjectBindings::setUserAny.		
++		*/
++		UserObjectBindings&	getUserObjectBindings() { return mUserObjectBindings; }
+ 
++		/** Return an instance of user objects binding associated with this class.
++		You can use it to associate one or more custom objects with this class instance.
++		@see UserObjectBindings::setUserAny.		
++		*/
++		const UserObjectBindings& getUserObjectBindings() const { return mUserObjectBindings; }		
++
++	protected:
++		/// User objects binding.
++		UserObjectBindings mUserObjectBindings;
+ 	};
+ 
+ 	/** Shared pointer to allow data streams to be passed around without
+diff -r 93180cc7c44f -r 2dfa7360a14c OgreMain/include/OgrePlatform.h
+--- a/OgreMain/include/OgrePlatform.h	Thu May 19 21:57:22 2011 -0500
++++ b/OgreMain/include/OgrePlatform.h	Tue May 24 02:45:44 2011 +0600
+@@ -186,6 +186,10 @@
+ 
+ #endif // OGRE_PLATFORM == OGRE_PLATFORM_WIN32
+ 
++#if OGRE_COMPILER == OGRE_COMPILER_MSVC && !defined(_DEBUG)
++#   define _SECURE_SCL 0
++#endif
++
+ //----------------------------------------------------------------------------
+ // Symbian Settings
+ #if OGRE_PLATFORM == OGRE_PLATFORM_SYMBIAN
+diff -r 93180cc7c44f -r 2dfa7360a14c OgreMain/include/OgreSubMesh.h
+--- a/OgreMain/include/OgreSubMesh.h	Thu May 19 21:57:22 2011 -0500
++++ b/OgreMain/include/OgreSubMesh.h	Tue May 24 02:45:44 2011 +0600
+@@ -36,6 +36,7 @@
+ #include "OgreVertexBoneAssignment.h"
+ #include "OgreAnimationTrack.h"
+ #include "OgreResourceGroupManager.h"
++#include "OgreUserObjectBindings.h"
+ 
+ namespace Ogre {
+ 
+@@ -282,7 +283,22 @@
+         /// Internal method for removing LOD data
+         void removeLodLevels(void);
+ 
++	public:
++		/** Return an instance of user objects binding associated with this class.
++		You can use it to associate one or more custom objects with this class instance.
++		@see UserObjectBindings::setUserAny.		
++		*/
++		UserObjectBindings&	getUserObjectBindings() { return mUserObjectBindings; }
+ 
++		/** Return an instance of user objects binding associated with this class.
++		You can use it to associate one or more custom objects with this class instance.
++		@see UserObjectBindings::setUserAny.		
++		*/
++		const UserObjectBindings& getUserObjectBindings() const { return mUserObjectBindings; }		
++
++	protected:
++		/// User objects binding.
++		UserObjectBindings mUserObjectBindings;
+     };
+ 	/** @} */
+ 	/** @} */
+# HG changeset patch
+# User Kerrax
+# Date 1306183544 -21600
+# Node ID 2dfa7360a14ca8accf3bd5b3aaa23af0537a7dfe
+# Parent  93180cc7c44f04d01a0d5419f9e32adc0991f687
+UserObjectBindings added to SubMesh, DataStream;
+SECURE_SCL defined to speed up release version
+
+diff -r 93180cc7c44f -r 2dfa7360a14c OgreMain/include/OgreDataStream.h
+--- a/OgreMain/include/OgreDataStream.h	Thu May 19 21:57:22 2011 -0500
++++ b/OgreMain/include/OgreDataStream.h	Tue May 24 02:45:44 2011 +0600
+@@ -31,6 +31,7 @@
+ #include "OgrePrerequisites.h"
+ #include "OgreString.h"
+ #include "OgreSharedPtr.h"
++#include "OgreUserObjectBindings.h"
+ #include <istream>
+ 
+ namespace Ogre {
+@@ -298,7 +299,22 @@
+         /** Close the stream; this makes further operations invalid. */
+         virtual void close(void) = 0;
+ 		
++	public:
++		/** Return an instance of user objects binding associated with this class.
++		You can use it to associate one or more custom objects with this class instance.
++		@see UserObjectBindings::setUserAny.		
++		*/
++		UserObjectBindings&	getUserObjectBindings() { return mUserObjectBindings; }
+ 
++		/** Return an instance of user objects binding associated with this class.
++		You can use it to associate one or more custom objects with this class instance.
++		@see UserObjectBindings::setUserAny.		
++		*/
++		const UserObjectBindings& getUserObjectBindings() const { return mUserObjectBindings; }		
++
++	protected:
++		/// User objects binding.
++		UserObjectBindings mUserObjectBindings;
+ 	};
+ 
+ 	/** Shared pointer to allow data streams to be passed around without
+diff -r 93180cc7c44f -r 2dfa7360a14c OgreMain/include/OgrePlatform.h
+--- a/OgreMain/include/OgrePlatform.h	Thu May 19 21:57:22 2011 -0500
++++ b/OgreMain/include/OgrePlatform.h	Tue May 24 02:45:44 2011 +0600
+@@ -186,6 +186,10 @@
+ 
+ #endif // OGRE_PLATFORM == OGRE_PLATFORM_WIN32
+ 
++#if OGRE_COMPILER == OGRE_COMPILER_MSVC && !defined(_DEBUG)
++#   define _SECURE_SCL 0
++#endif
++
+ //----------------------------------------------------------------------------
+ // Symbian Settings
+ #if OGRE_PLATFORM == OGRE_PLATFORM_SYMBIAN
+diff -r 93180cc7c44f -r 2dfa7360a14c OgreMain/include/OgreSubMesh.h
+--- a/OgreMain/include/OgreSubMesh.h	Thu May 19 21:57:22 2011 -0500
++++ b/OgreMain/include/OgreSubMesh.h	Tue May 24 02:45:44 2011 +0600
+@@ -36,6 +36,7 @@
+ #include "OgreVertexBoneAssignment.h"
+ #include "OgreAnimationTrack.h"
+ #include "OgreResourceGroupManager.h"
++#include "OgreUserObjectBindings.h"
+ 
+ namespace Ogre {
+ 
+@@ -282,7 +283,22 @@
+         /// Internal method for removing LOD data
+         void removeLodLevels(void);
+ 
++	public:
++		/** Return an instance of user objects binding associated with this class.
++		You can use it to associate one or more custom objects with this class instance.
++		@see UserObjectBindings::setUserAny.		
++		*/
++		UserObjectBindings&	getUserObjectBindings() { return mUserObjectBindings; }
+ 
++		/** Return an instance of user objects binding associated with this class.
++		You can use it to associate one or more custom objects with this class instance.
++		@see UserObjectBindings::setUserAny.		
++		*/
++		const UserObjectBindings& getUserObjectBindings() const { return mUserObjectBindings; }		
++
++	protected:
++		/// User objects binding.
++		UserObjectBindings mUserObjectBindings;
+     };
+ 	/** @} */
+ 	/** @} */

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout">
+	<Widget type="Window" skin="WindowCSX" position="20 50 200 180" name="_Main" layer="Overlapped">
+        <UserString key="DefaultCoord" value="0.60 0.043 0.40 0.457"/>
+        <Property key="Widget_Caption" value="#{WorldObjectTree}"/>
+		<Widget type="TreeControl" skin="TreeControl16" position="2 2 187 140" align="Stretch" name="treeControl">
+		</Widget>
+	</Widget>
+</MyGUI>

@@ -1,0 +1,8 @@
+copy "%OGRE_HOME%\VCbuild\bin\Debug\OgreMain_d.dll" "..\..\..\..\Debug\"
+copy "%OGRE_HOME%\VCbuild\bin\Debug\OIS_d.dll" "..\..\..\..\Debug\"
+copy "%OGRE_HOME%\VCbuild\bin\Debug\RenderSystem_GL_d.dll" "..\..\..\..\Debug\"
+copy "%OGRE_HOME%\VCbuild\bin\Debug\RenderSystem_Direct3D9_d.dll" "..\..\..\..\Debug\"
+copy "%MYGUI_HOME%\VCbuild\bin\debug\MyGUIEngine_d.dll" "..\..\..\..\Debug\"
+copy "%ICU_HOME%\bin\icudt44.dll" "..\..\..\..\Debug\"
+copy "%ICU_HOME%\bin\icuuc44d.dll" "..\..\..\..\Debug\"
+copy "%LIBSNDFILE_HOME%\libsndfile-1.dll" "..\..\..\..\Debug\"

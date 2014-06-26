@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Resource" version="1.1">
+    <Resource type="ResourceSkin" name="ExpandButtonSkin" size="18 18" texture="CommonUI_BlueWhiteSkins.png">
+        <BasisSkin type="SubSkin" offset="0 0 18 18" align="Stretch">
+            <State name="disabled" offset="49 2 18 18"/>
+            <State name="normal" offset="49 23 18 18"/>
+            <State name="highlighted" offset="49 44 18 18"/>
+            <State name="pushed" offset="49 65 18 18"/>
+            <State name="disabled_checked" offset="49 86 18 18"/>
+            <State name="normal_checked" offset="49 107 18 18"/>
+            <State name="highlighted_checked" offset="49 128 18 18"/>
+            <State name="pushed_checked" offset="49 149 18 18"/>
+        </BasisSkin>
+    </Resource>
+    <Resource type="ResourceSkin" name="WindowResizeLeftUpSkin" size="9 9" texture="CommonUI_BlueWhiteSkins.png">
+        <BasisSkin type="SubSkin" offset="0 0 9 9" align="Stretch">
+            <State name="disabled" offset="268 170 9 9"/>
+            <State name="normal" offset="268 170 9 9"/>
+            <State name="highlighted" offset="268 183 9 9"/>
+            <State name="pushed" offset="268 183 9 9"/>
+        </BasisSkin>
+    </Resource>
+    <Resource type="ResourceSkin" name="WindowResizeRightUpSkin" size="9 9" texture="CommonUI_BlueWhiteSkins.png">
+        <BasisSkin type="SubSkin" offset="0 0 9 9" align="Stretch">
+            <State name="disabled" offset="281 170 9 9"/>
+            <State name="normal" offset="281 170 9 9"/>
+            <State name="highlighted" offset="281 183 9 9"/>
+            <State name="pushed" offset="281 183 9 9"/>
+        </BasisSkin>
+    </Resource>
+    <Resource type="ResourceSkin" name="TreeControlItemButtonSkin" size="12 12" texture="CommonUI_BlueWhiteSkins.png">
+        <BasisSkin type="SubSkin" offset="0 0 12 12" align="Stretch">
+            <State name="disabled" offset="270 41 12 12"/>
+            <State name="normal" offset="270 41 12 12"/>
+            <State name="highlighted" offset="270 54 12 12"/>
+            <State name="pushed" offset="270 67 12 12"/>
+            <State name="disabled_checked" offset="270 2 12 12"/>
+            <State name="normal_checked" offset="270 2 12 12"/>
+            <State name="highlighted_checked" offset="270 15 12 12"/>
+            <State name="pushed_checked" offset="270 28 12 12"/>
+        </BasisSkin>
+    </Resource>
+    <Resource type="ResourceSkin" name="TreeControlItemSkin" size="1 1" texture="CommonUI_BlueWhiteSkins.png">
+        <BasisSkin type="SubSkin" offset="0 0 1 1" align="Stretch">
+            <State name="disabled" offset="341 117 1 1"/>
+            <State name="normal" offset="340 115 1 1"/>
+            <State name="highlighted" offset="303 114 1 1"/>
+            <State name="pushed" offset="306 116 1 1"/>
+            <State name="disabled_checked" offset="318 116 1 1"/>
+            <State name="normal_checked" offset="316 114 1 1"/>
+            <State name="highlighted_checked" offset="330 117 1 1"/>
+            <State name="pushed_checked" offset="330 113 1 1"/>
+        </BasisSkin>
+    </Resource>
+    <Resource type="ResourceSkin" name="FrameStatsTextBoxSkin" size="16 17" texture="CommonUI_BlueWhiteSkins.png">
+        <BasisSkin type="SubSkin" offset="0 0 16 17" align="Stretch">
+            <State name="normal" offset="462 72 16 17"/>
+        </BasisSkin>
+        <BasisSkin type="SimpleText" offset="3 3 10 10" align="Stretch">
+            <State name="normal" colour="1 1 1" shift="0"/>
+        </BasisSkin>
+    </Resource>
+</MyGUI>

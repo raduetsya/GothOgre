@@ -1,0 +1,32 @@
+1. Insert the following lines into OgrePlatform.h 
+(at the end of the "Windows Settings"):
+
+#if OGRE_COMPILER == OGRE_COMPILER_MSVC && !defined(_DEBUG)
+#   define _SECURE_SCL 0
+#endif
+
+
+2. Insert the following lines to the "SubMesh" class (in file "OgreSubMesh.h")
+and to the "DataStream" class (in file "OgreDataStream.h"):
+
+	public:
+		/** Return an instance of user objects binding associated with this class.
+		You can use it to associate one or more custom objects with this class instance.
+		@see UserObjectBindings::setUserAny.		
+		*/
+		UserObjectBindings&	getUserObjectBindings() { return mUserObjectBindings; }
+
+		/** Return an instance of user objects binding associated with this class.
+		You can use it to associate one or more custom objects with this class instance.
+		@see UserObjectBindings::setUserAny.		
+		*/
+		const UserObjectBindings& getUserObjectBindings() const { return mUserObjectBindings; }		
+
+	protected:
+		/// User objects binding.
+		UserObjectBindings mUserObjectBindings;
+		
+		
+3. Also insert the following line to the beginnings of thesame files:
+
+#include "OgreUserObjectBindings.h"

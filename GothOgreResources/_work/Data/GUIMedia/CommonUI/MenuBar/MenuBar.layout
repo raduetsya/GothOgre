@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="MenuBar" skin="MenuBar" position="100 100 300 26" align="HStretch Top" layer="Overlapped" name="_Main">
+        <UserString key="DefaultCoord" value="0 0 1 0.043"/>
+        <UserString key="ItemDefault" value="#{1}"/>
+        <UserString key="ItemWithHotkey" value="#{1} (#{2})"/>
+    </Widget>
+</MyGUI>

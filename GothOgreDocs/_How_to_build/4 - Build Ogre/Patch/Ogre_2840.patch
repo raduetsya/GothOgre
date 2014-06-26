@@ -1,0 +1,104 @@
+# HG changeset patch
+# User Kerrax
+# Date 1306500007 -21600
+# Node ID 940039dd27f641ad08f504f6f3adc4c78c9cb770
+# Parent  2dfa7360a14ca8accf3bd5b3aaa23af0537a7dfe
+The old "Any::holder<ValueType>" class template was splitted into two classes: "Any::baseholder" and new Any::holder<ValueType>
+to allow me to create AnyLite - an Any modification which doesn't require that ValueType has operator <<.
+
+diff -r 2dfa7360a14c -r 940039dd27f6 OgreMain/include/OgreAny.h
+--- a/OgreMain/include/OgreAny.h	Tue May 24 02:45:44 2011 +0600
++++ b/OgreMain/include/OgreAny.h	Fri May 27 18:40:07 2011 +0600
+@@ -145,13 +145,30 @@
+ 
+         };
+ 
++
+         template<typename ValueType>
+-        class holder : public placeholder
++        class baseholder : public placeholder
++		{
++        public: // structors
++
++            baseholder(const ValueType & value)
++              : held(value)
++            {
++            }
++
++        public: // representation
++
++            ValueType held;
++		};
++
++
++        template<typename ValueType>
++        class holder : public baseholder<ValueType>
+         {
+         public: // structors
+ 
+             holder(const ValueType & value)
+-              : held(value)
++              : baseholder<ValueType>(value)
+             {
+             }
+ 
+@@ -171,12 +188,6 @@
+ 			{
+ 				o << held;
+ 			}
+-
+-
+-        public: // representation
+-
+-            ValueType held;
+-
+         };
+ 
+ 
+@@ -201,7 +212,7 @@
+ 			}
+ 			else if(getType() == typeid(ValueType))
+ 			{
+-             	return static_cast<Any::holder<ValueType> *>(mContent)->held;
++             	return static_cast<Any::baseholder<ValueType> *>(mContent)->held;
+ 			}
+ 			else
+ 			{
+@@ -214,7 +225,27 @@
+ 			}
+ 		}
+ 
+-		
++	    template<typename ValueType>
++    	ValueType* getPtr() const
++		{
++			if (!mContent) 
++			{
++				return 0;
++			}
++			else if(getType() == typeid(ValueType))
++			{
++             	return &(static_cast<Any::baseholder<ValueType> *>(mContent)->held);
++			}
++			else
++			{
++				StringUtil::StrStreamType str;
++				str << "Bad cast from type '" << getType().name() << "' "
++					<< "to '" << typeid(ValueType).name() << "'";
++				OGRE_EXCEPT(Exception::ERR_INVALIDPARAMS,
++					 str.str(), 
++					"Any::operator()");
++			}
++		}
+ 
+     };
+ 
+@@ -383,7 +414,7 @@
+     ValueType * any_cast(Any * operand)
+     {
+         return operand && operand->getType() == typeid(ValueType)
+-                    ? &static_cast<Any::holder<ValueType> *>(operand->mContent)->held
++                    ? &static_cast<Any::baseholder<ValueType> *>(operand->mContent)->held
+                     : 0;
+     }
+ 

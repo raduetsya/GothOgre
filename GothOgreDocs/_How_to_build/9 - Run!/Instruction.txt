@@ -1,0 +1,5 @@
+Copy all files and folders from folder "_work" of your Gothic/Gothic II installation
+to folder "_work" in the GothOgre root folder, after you have Gothic MDK installed.
+
+Run Starter.exe.
+Enjoy!

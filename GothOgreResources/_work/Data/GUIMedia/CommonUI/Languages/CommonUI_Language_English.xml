@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI>
+	<!-- Message box -->
+	<Tag name="Ok">Ok</Tag>
+	<Tag name="Yes">Yes</Tag>
+	<Tag name="No">No</Tag>
+	<Tag name="Abort">Abort</Tag>
+	<Tag name="Retry">Retry</Tag>
+	<Tag name="Ignore">Ignore</Tag>
+	<Tag name="Cancel">Cancel</Tag>
+	<Tag name="Try">Try</Tag>
+	<Tag name="Continue">Continue</Tag>
+	<Tag name="Close">Close</Tag>
+	<Tag name="Apply">Apply</Tag>
+
+	<Tag name="Information">Information</Tag>
+	<Tag name="Question">Question</Tag>
+	<Tag name="Warning">Warning</Tag>
+	<Tag name="Error">Error</Tag>
+	
+	<!-- FileDialog -->
+	<Tag name="FoldersAndFiles">Folders and Files</Tag>
+	<Tag name="AlphabeticList">Alphabetic list</Tag>
+	<Tag name="FileName">File name</Tag>
+	<Tag name="FileSize">File size</Tag>
+	<Tag name="FilePath">File path</Tag>
+	<Tag name="ArchiveType">Archive type</Tag>
+	<Tag name="FileName_">File name:</Tag>
+	<Tag name="FileType_">File type:</Tag>
+	<Tag name="CurrentPath_">Current path:</Tag>
+	<Tag name="SelectFileBefore">Select a file before.</Tag>
+	<Tag name="FileNotFound">File not found: '#{1}'</Tag>
+	<Tag name="ConfirmOverwriteFile">File '#{1}' exists already. Do you wish to overwrite it?</Tag>
+	<Tag name="Load">Load</Tag>
+	<Tag name="Merge">Merge</Tag>
+	<Tag name="Save">Save</Tag>
+
+	<!-- Progress dialog -->
+	<Tag name="Scanning">Scanning</Tag>
+	<Tag name="Loading">Loading</Tag>
+	<Tag name="Merging">Merging</Tag>
+	<Tag name="Saving">Saving</Tag>
+	<Tag name="StopTimer">Stop Timer</Tag>
+
+	<!-- FrameStatsWindow -->
+	<Tag name="FrameStatistics">Frame Statistics</Tag>
+	
+</MyGUI>

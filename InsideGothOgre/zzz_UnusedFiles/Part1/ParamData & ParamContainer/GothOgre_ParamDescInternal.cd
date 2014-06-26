@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Struct Name="GothOgre::Internal_Enum" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>d:\vit\Gothic II\InsideGothOgre\GothOgre\src\GothOgre_ParamDesc.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GothOgre::Internal_Array" Collapsed="true">
+    <Position X="8" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>d:\vit\Gothic II\InsideGothOgre\GothOgre\src\GothOgre_ParamDesc.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GothOgre::Internal_Numeric&lt;T&gt;" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>d:\vit\Gothic II\InsideGothOgre\GothOgre\src\GothOgre_ParamDesc.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GothOgre::Internal_NumericArray&lt;T&gt;" Collapsed="true">
+    <Position X="7" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\vit\Gothic II\InsideGothOgre\GothOgre\src\GothOgre_ParamDesc.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GothOgre::ParamDescInternal" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\vit\Gothic II\InsideGothOgre\GothOgre\src\GothOgre_ParamDesc.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GothOgre::ParamDescInternal_Enum" Collapsed="true">
+    <Position X="3.25" Y="0.5" Width="2.75" />
+    <InheritanceLine Type="GothOgre::Internal_Enum" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="0.75" />
+        <Point X="6" Y="0.75" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="GothOgre::ParamDescInternal" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="0.812" />
+        <Point X="3.25" Y="0.812" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\vit\Gothic II\InsideGothOgre\GothOgre\src\GothOgre_ParamDesc.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GothOgre::ParamDescInternal_Array" Collapsed="true">
+    <Position X="3.25" Y="4.25" Width="2.75" />
+    <InheritanceLine Type="GothOgre::Internal_Array" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="4.75" />
+        <Point X="7.625" Y="4.75" />
+        <Point X="7.625" Y="4.5" />
+        <Point X="6" Y="4.5" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="GothOgre::ParamDescInternal" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.062" Y="1.009" />
+        <Point X="1.062" Y="4.625" />
+        <Point X="3.25" Y="4.625" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\vit\Gothic II\InsideGothOgre\GothOgre\src\GothOgre_ParamDesc.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GothOgre::ParamDescInternal_Numeric&lt;T&gt;" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="2.75" />
+    <InheritanceLine Type="GothOgre::Internal_Numeric&lt;T&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="2" />
+        <Point X="6" Y="2" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="GothOgre::ParamDescInternal" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.188" Y="1.009" />
+        <Point X="2.188" Y="2.062" />
+        <Point X="3.25" Y="2.062" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\vit\Gothic II\InsideGothOgre\GothOgre\src\GothOgre_ParamDesc.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GothOgre::ParamDescInternal_NumericArray&lt;T&gt;" Collapsed="true">
+    <Position X="3.25" Y="3" Width="2.75" />
+    <InheritanceLine Type="GothOgre::ParamDescInternal" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.562" Y="1.009" />
+        <Point X="1.562" Y="3.375" />
+        <Point X="3.25" Y="3.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\vit\Gothic II\InsideGothOgre\GothOgre\src\GothOgre_ParamDesc.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

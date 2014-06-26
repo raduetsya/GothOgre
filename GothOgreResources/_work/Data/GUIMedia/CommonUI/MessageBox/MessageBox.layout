@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Window" skin="WindowC" position="265 305 315 135" layer="Popup" name="_Main">
+        <Property key="Snap" value="true"/>
+        <Widget type="ImageBox" skin="ImageBox" position="5 5 50 50" name="icon">
+            <Property key="ImageResource" value="MessageBoxIcons"/>
+            <Property key="ImageGroup" value="Icons"/>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position="60 5 237 50" align="HStretch Top" name="text">
+            <Property key="TextAlign" value="Left VCenter"/>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" position="10 65 280 26" align="HStretch Bottom" name="buttonPlace">
+            <Widget type="Button" skin="Button" position="25 0 100 26" name="button1">
+                <UserString key="Skin" value="Button"/>
+            </Widget>
+            <Widget type="Button" skin="Button" position="155 0 100 26" name="button2"/>
+        </Widget>
+    </Widget>
+</MyGUI>

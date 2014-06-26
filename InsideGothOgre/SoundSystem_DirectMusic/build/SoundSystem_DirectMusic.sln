@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoundSystem_DirectMusic", "SoundSystem_DirectMusic.vcproj", "{88D537ED-F959-4066-B1F9-7EBEA57E570D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88D537ED-F959-4066-B1F9-7EBEA57E570D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{88D537ED-F959-4066-B1F9-7EBEA57E570D}.Debug|Win32.Build.0 = Debug|Win32
+		{88D537ED-F959-4066-B1F9-7EBEA57E570D}.Release|Win32.ActiveCfg = Release|Win32
+		{88D537ED-F959-4066-B1F9-7EBEA57E570D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

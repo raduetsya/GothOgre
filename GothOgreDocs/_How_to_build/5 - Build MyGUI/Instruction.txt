@@ -1,0 +1,40 @@
+A) Apply patches from this folder.
+(Right-click on the <MyGUI> folder, select TortoiseSVN -> apply Patch
+
+B) Run CMake (cmake-gui), set the parameters:
+Where is the source code:    <MyGUI>
+Where to build the binaries: <MyGUI>/VCbuild
+
+Press the "Configure" button, then set the following options:
+set "MyGUI_DEPENDENCIES_DIR" to "<ogredeps>"
+set "OGRE_BUILD" to "<ogre>\VCbuild"
+set "MyGUI_BUILD_UNITTESTS" to true
+
+It's useless to set "OGRE_INCLUDE_DIR" and "OGRE_LIB_DIR"
+because likely there is a bug in the MyGUI cmake configurator.
+There is an alternative way to set pathes -
+via Visual Studio's settings. 
+Add the following include pathes:
+$(BOOST_ROOT)
+$(OGRE_HOME)\OgreMain\include
+$(OGRE_HOME)\VCbuild\include
+
+and add the following lib pathes:
+$(BOOST_ROOT)\stage\lib
+$(OGRE_HOME)\VCbuild\lib\Debug
+$(OGRE_HOME)\VCbuild\lib\Release
+
+Press the "Configure" button again, and press the "Generate" button.
+The "Generate" button will create a solution <MyGUI>/VCbuild/MyGUI.sln.
+
+C) Open solution <MyGUI>\VCbuild\MyGUI.sln, and build it.
+
+D) Build the documentation.
+Build the "api-docs" project in the same solution to do that.
+To compile chm, then open "<MyGUI>/VCbuild/api/index.hhp" with HTML Help WorkShop.
+You'll get "<ogre>/VCbuild/Docs/html/OgreAPIReference.chm" as result.
+i.e. file <MyGUI>/VCbuild/Docs/MyGUI.chm.
+
+E) Ensure you successfully have built MyGUI. 
+Go to folder "<MyGUI>/VCbuild/bin/Debug" and run demos and unit tests. 
+Go to folder "<MyGUI>/VCbuild/bin/Release" and run demos and unit tests.

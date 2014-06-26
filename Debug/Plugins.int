@@ -1,0 +1,18 @@
+# Defines plugins to load
+
+# Define plugin folder
+PluginFolder=.
+
+# Define plugins
+Plugin=RenderSystem_Direct3D9_d
+Plugin=RenderSystem_GL_d
+Plugin=UnicodeSupport_Win_d
+Plugin=InputSystem_OIS_d
+Plugin=ExtArchives_d
+Plugin=ExtSceneManager_d
+Plugin=FileFormats_d
+Plugin=ZenWorld_d
+Plugin=EditorUI_d
+Plugin=ScriptProcessing_d
+Plugin=SoundSystem_OpenAL_d
+Plugin=SoundSystem_DirectMusic_d

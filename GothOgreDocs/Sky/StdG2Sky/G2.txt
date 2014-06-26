@@ -1,0 +1,13 @@
+SkyDome_ColorLayer.3ds
+	faces: 84
+	verts: 49
+	max z:  6976 cm, radius = 0
+	min z: -2023 cm, radius = 9000 cm
+	uv-mapping: no
+	
+SkyDome_Layer1.3ds - SkyDome_Layer2.3ds
+	faces: 360
+	verts: 196
+	max z:  677 cm, radius = 0
+	min z: -548 cm, radius = 9576 cm
+	uv-mapping: yes

@@ -1,0 +1,30 @@
+A) Apply patch from this folder to Ogre dependencies.
+(TortoiseHg->Workbench->Repository->Import)
+
+B) Run CMake (cmake-gui), set the parameters:
+Where is the source code:    <OgreDeps>
+Where to build the binaries: <OgreDeps>/VCbuild
+
+Here <OgreDeps> means the directory with cloned Ogre dependencies' repository.
+
+Press the "Configure" button, then press this button again, and press the "Generate" button.
+The "Generate" button will create a solution <OgreDeps>/VCbuild/OgreDeps.sln.
+
+C) Open solution <OgreDeps>\VCbuild\OGREDEPS.sln, and build it in the "Release" and "Debug"
+configurations. 
+
+D) Build project "INSTALL" in the solution also in the "Release" and "Debug"
+configurations. 
+
+E) Ensure you successfully built OgreDeps.
+Go into the "<OgreDeps>\bin" folder and look at *.dll files 
+(in "Debug" and "Release" subfolders) and 
+then go into the "<OgreDeps>\lib" folder and look at *.lib files 
+(also in "Debug" and "Release" subfolders).
+
+F) Sets environment variable "OGRE_DEPENDENCIES_DIR" to the path to <OgreDeps> folder
+(Use "My Computer Properties->Environment Variables").
+This environment variable is used by Ogre to find dependencies.
+
+G) (this item will be removed later) 
+Copy all files from folder "<OgreDeps>\src\zziplib\zzip" to folder "<OgreDeps>\include\zzip".

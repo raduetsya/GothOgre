@@ -1,0 +1,25 @@
+# Resource locations to be added to the default path
+[GUIMedia]
+FILESYSTEM=../GothOgreResources/./_work/Data/GUIMedia
+# ZIP=GothOgreResources.zip/./_work/Data/GUIMedia
+
+[Textures]
+FILESYSTEM=../_work/Data/Textures
+
+[Meshes]
+FILESYSTEM=../_work/Data/Meshes
+# ZIP=GothOgreResources.zip/./_work/Data/Meshes
+# VDFS=../Data/Meshes.vdf
+
+[Worlds]
+FILESYSTEM=../_work/Data/Worlds
+
+[Sound]
+FILESYSTEM=../_work/Data/Sound
+# FILESYSTEM=../_work/Data/Music
+
+[Music]
+FILESYSTEM=../_work/Data/Music
+
+[Scripts]
+FILESYSTEM=../_work/Data/Scripts

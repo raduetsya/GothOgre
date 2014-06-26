@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI>
+	<!-- File menu -->
+	<Tag name="File">File</Tag>
+	<Tag name="NewWorld">New world</Tag>
+	<Tag name="LoadWorld">Load world zen...</Tag>
+	<Tag name="LoadWorld_Desc">Load a world from a specified zen file</Tag>
+	<Tag name="MergeWorld">Merge world zen...</Tag>
+	<Tag name="MergeWorld_Desc">Merge a world from a zen file with the current world</Tag>
+	<Tag name="LoadWorld3ds">Load world 3ds...</Tag>
+	<Tag name="LoadWorld3ds_Desc">Load a world from a specified 3ds file</Tag>
+	<Tag name="MergeWorld3ds">Merge world 3ds...</Tag>
+	<Tag name="MergeWorld3ds_Desc">Merge a world from a 3ds file with the current world</Tag>
+	<Tag name="Quit">Quit</Tag>
+	<Tag name="Quit_Desc">Quit from the application</Tag>
+	
+	<!-- Tools menu -->
+	<Tag name="Tools">Tools</Tag>
+	<Tag name="Select">Select</Tag>
+	<Tag name="Select_Desc">Select objects with the mouse</Tag>
+	<Tag name="FreeLook">Free look</Tag>
+	<Tag name="FreeLook_Desc">Free look with the mouse</Tag>
+	<Tag name="CameraPosition">Camera position</Tag>
+	<Tag name="StoreCameraPosition">Store camera position</Tag>
+	<Tag name="RestoreCameraPosition">Restore camera position</Tag>
+	<Tag name="Delete">Delete</Tag>
+	<Tag name="Delete_Desc">Delete the selected objects</Tag>
+	<Tag name="ConfirmDeleteObjects">Do you really wish to delete the selected objects (#{1})?</Tag>
+
+	<!-- Sound menu -->
+	<Tag name="Sound">Sound</Tag>
+	<Tag name="PlaySound">Play sound</Tag>
+	<Tag name="PlayMusic">Play music</Tag>
+
+	<!-- Settings menu -->
+	<Tag name="Settings">Settings</Tag>
+	<Tag name="RenderMode_Solid">Render Mode: Solid</Tag>
+	<Tag name="RenderMode_Wireframe">Render Mode: Wireframe</Tag>
+	<Tag name="RenderMode_Points">Render Mode: Points</Tag>
+	<Tag name="RenderMode_Desc">Render mode (Solid/Wireframe)</Tag>
+	<Tag name="FrameStatsConfig">Frame statistics...</Tag>
+	<Tag name="FrameStatsConfig_Desc">Frame statistics...</Tag>
+	<Tag name="GraphicSettingsConfig">Graphic settings...</Tag>
+	<Tag name="GraphicSettingsConfig_Desc">Graphic settings...</Tag>
+	
+	<!-- Windows menu -->
+	<Tag name="Windows">Windows</Tag>
+	<Tag name="FrameStats_Shown">Frame statistics: Shown</Tag>
+	<Tag name="FrameStats_Hidden">Frame statistics: Hidden</Tag>
+	<Tag name="FrameStats_Desc">Show/Hide the 'Frame Statistics' window</Tag>
+	<Tag name="WorldObjectTree_Shown">Object tree: Shown</Tag>
+	<Tag name="WorldObjectTree_Hidden">Object tree: Hidden</Tag>
+	<Tag name="WorldObjectTree_Desc">Show/Hide the 'Object Tree' window</Tag>
+	<Tag name="WorldObjectProperties_Shown">Object properties: Shown</Tag>
+	<Tag name="WorldObjectProperties_Hidden">Object properties: Hidden</Tag>
+	<Tag name="WorldObjectProperties_Desc">Show/Hide the 'Object Properties' window</Tag>
+	
+	<!-- Help menu -->
+	<Tag name="Help">Help</Tag>
+	<Tag name="AboutGothOgre">About GothOgre...</Tag>
+	<Tag name="AboutGothOgre_Desc">About GothOgre</Tag>
+
+	<!-- FileDialogs -->
+	<Tag name="SelectZenToLoad">Select a zen file to load</Tag>
+	<Tag name="SelectZenToMerge">Select a zen file to merge</Tag>
+	<Tag name="ZenWorlds">Zen worlds (*.zen)</Tag>
+	<Tag name="Select3dsToLoad">Select a 3ds file to load</Tag>
+	<Tag name="Select3dsToMerge">Select a 3ds file to merge</Tag>
+	<Tag name="3dsMeshes">3D Studio Meshes (*.3ds)</Tag>
+	<Tag name="SelectFileToPlay">Select a file to play</Tag>
+	<Tag name="WaveAudio">Wave audio (*.wav)</Tag>
+	<Tag name="OggVorbis">Ogg vorbis (*.ogg)</Tag>
+	<Tag name="FLAC">Free Lossless Audio Codec (*.flac)</Tag>
+	<Tag name="DirectMusicSgt">DirectMusic Segment (*.sgt)</Tag>	
+
+	<!-- SoundPlayerDialog -->
+	<Tag name="SoundPlayer">Sound Player</Tag>
+	<Tag name="Play">Play</Tag>
+	<Tag name="Stop">Stop</Tag>
+	<Tag name="Looping">Looping</Tag>
+	<Tag name="Length_">Length:</Tag>
+	<Tag name="Volume_">Volume:</Tag>
+
+	<!-- WorldViewWindow -->
+	<Tag name="Inactive">Inactive</Tag>
+	<Tag name="ConfirmSaveChanges">Do you want to save the changes you made to '#{1}'?</Tag>
+	<Tag name="Save">Save</Tag>
+	<Tag name="DontSave">Don't save</Tag>
+		
+	<!-- WorldObjectTreeWindow -->
+	<Tag name="WorldObjectTree">Object Tree</Tag>
+	
+	<!-- WorldObjectPropertiesWindow -->
+	<Tag name="WorldObjectProperties">Object Properties</Tag>
+
+	<!-- FrameStatsConfigDialog -->
+	<Tag name="FrameStatisticsConfiguration">Frame Statistics Configuration</Tag>
+	<Tag name="ShowFrameStatistics">Show frame statistics</Tag>
+	<Tag name="MovableWindow">Movable window</Tag>
+	<Tag name="TextTemplate_">Text template:</Tag>
+	<Tag name="InsertValue_">Insert value:</Tag>
+	
+	<!-- GraphicsSettingsDialog -->
+	<Tag name="GraphicSettings">Graphic Settings</Tag>
+	<Tag name="RenderingDistances">Rendering Distances</Tag>
+	<Tag name="Camera">Camera</Tag>
+	<Tag name="FarClipDistance">Far clip distance:</Tag>
+	<Tag name="AutoUpdateOtherDistances">Update other distances automatically:</Tag>
+	<Tag name="Fog">Fog</Tag>
+	<Tag name="FogEnabled">Fog enabled:</Tag>
+	<Tag name="FogNearDistance">Near distance:</Tag>
+	<Tag name="FogFarDistance">Far distance:</Tag>
+	<Tag name="Vobs">Vobs</Tag>
+	<Tag name="VobType">Vob type</Tag>
+	<Tag name="VobMaxSize">Max size</Tag>
+	<Tag name="VobRenderingDistance">Rendering distance</Tag>
+	<Tag name="Tiny">Tiny</Tag>
+	<Tag name="Small">Small</Tag>
+	<Tag name="Normal">Normal</Tag>
+	<Tag name="Large">Large</Tag>
+	<Tag name="ExtraLarge">ExtraLarge</Tag>
+	<Tag name="Huge">Huge</Tag>
+	<Tag name="Bsp">Bsp</Tag>
+	<Tag name="BspRenderingDistance">RenderingDistance:</Tag>
+
+</MyGUI>

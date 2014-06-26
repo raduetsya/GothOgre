@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="UserTags">
+	<!-- Layout filenames -->
+	<Tag name="FileDialog_Layout">FileDialog.layout</Tag>
+	<Tag name="MenuBar_Layout">MenuBar.layout</Tag>
+	<Tag name="MessageBox_Layout">MessageBox.layout</Tag>
+	<Tag name="FrameStatsPanel_Layout">FrameStatsPanel.layout</Tag>
+	<Tag name="ProgressDialog_Layout">ProgressDialog.layout</Tag>
+	<Tag name="ProgressDialog_ConfigSection">ProgressDialog</Tag>
+</MyGUI>

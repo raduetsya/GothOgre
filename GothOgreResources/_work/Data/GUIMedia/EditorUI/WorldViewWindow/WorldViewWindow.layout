@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Window" skin="WindowCSX" position="150 160 460 305" layer="Overlapped" name="_Main">
+        <UserString key="DefaultCoord" value="0.00 0.043 0.60 0.957"/>
+        <UserString key="NewWindowOffset" value="0.04 0.04"/>
+        <Widget type="Canvas" skin="Canvas" position="0 0 450 268" align="Stretch" name="canvas">
+            <Widget type="TextBox" skin="TextBox" position="135 99 180 69" align="Center" name="panelInactiveShower">
+                <Property key="FontHeight" value="30"/>
+                <Property key="Visible" value="false"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="TextColour" value="1 1 1"/>
+                <Property key="NeedKey" value="false"/>
+                <Property key="NeedMouse" value="false"/>
+                <Property key="Caption" value="#{Inactive}"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

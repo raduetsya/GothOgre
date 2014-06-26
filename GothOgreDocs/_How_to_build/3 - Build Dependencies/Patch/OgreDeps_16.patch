@@ -1,0 +1,21 @@
+# HG changeset patch
+# User Kerrax
+# Date 1306161079 -21600
+# Node ID 1f37d0e79e51bb9492324e1c33c3d23759726497
+# Parent  6d4c1ba6f5fd1e6b9c3a0c1978f103a889f33065
+Changed OISPrereqs.h to speed up STL containers in release version.
+
+diff -r 6d4c1ba6f5fd -r 1f37d0e79e51 src/ois/includes/OISPrereqs.h
+--- a/src/ois/includes/OISPrereqs.h	Wed Nov 03 15:34:13 2010 +0100
++++ b/src/ois/includes/OISPrereqs.h	Mon May 23 20:31:19 2011 +0600
+@@ -30,6 +30,10 @@
+ //  * Preprocessor definitons
+ //----------------------------------------------------------------------------//
+ 
++#if defined(_MSC_VER) && !defined(_DEBUG)
++#   define _SECURE_SCL 0
++#endif
++
+ //-------------- Common STL Containers ---------------------------------------//
+ #include <vector>
+ #include <string>
